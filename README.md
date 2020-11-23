@@ -12,7 +12,7 @@ I have a series of short video tutorials on the [Basic Functions of Data Journal
 - We'll work together on a project step-by-step so you can practice this.
 - I'll provide a detailed practice session you can do on your own later.
 
-## Links
+## Lesson links
 
 - [The Demo](demo.md)
 - [Hands-on session](hands-on.md)

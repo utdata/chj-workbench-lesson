@@ -94,7 +94,7 @@ To get this answer we need a simple aggregation. Since each row of data is an ap
 
 ### Group and aggregate
 
-In Workbench, aggregation is part of the **Group** step. (Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate steps. Workbench does the same, but it's under the hood of the graphical interface.)
+Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate terms because you define values in each part separately. Workbench does the same, but they are in the same "Step" in the graphical interface. The function is called **Group** and the aggregation is called the **Operation** within the step.
 
 - Start a new step and choose the **Group** function.
 - For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.) See [Select](https://vimeo.com/showcase/7320305/video/435910324) for a refresher on the concept.
