@@ -6,6 +6,8 @@ The tool provides some of the benefits of programming-based data science techniq
 
 I have a series of short video tutorials on the [Basic Functions of Data Journalism](https://vimeo.com/showcase/7320305) that you may find useful. The videos cover common techniques used in data analysis, including in Workbench.
 
+Lastly, Workbench has a [Training](https://app.workbenchdata.com/lessons/en) section with tutorials and lessons that cover basic data journalism concepts. They are worth doing.
+
 ## How we'll handle this session
 
 - I'll do a quick demonstration working through some of the relevant functions and abilities of Workbench. Just watch this part ... don't try to follow along. You'll get to do that soon enough.
@@ -16,4 +18,4 @@ I have a series of short video tutorials on the [Basic Functions of Data Journal
 
 - [The Demo](demo.md)
 - [Hands-on session](hands-on.md)
-- [Practice on your own](practice.md). If you want to practice on your own with some health-related data: Opiod deaths from Minnesota. (H/T Mary Jo).
+- [Practice on your own](practice.md). If you want to practice on your own with some health-related data: Opioid deaths from Minnesota. (H/T Mary Jo).

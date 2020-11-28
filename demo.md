@@ -80,4 +80,3 @@ While not really valid for this analysis, we show how you can use **Formula** to
 ## Data sources
 
 - The baby names data comes from the Social Security Administration. The workflow uses files from the [National data archive listed here](https://www.ssa.gov/oact/babynames/limits.html).
-- Population data comes from the [Populations Estimate Program](https://www.census.gov/programs-surveys/popest.html). We used the Annual Estimates of the Resident Population for the United States, Regions, States, and Puerto Rico: April 1, 2010 to July 1, 2019 (NST-EST2019-01) file found on [this page](https://www.census.gov/data/tables/time-series/demo/popest/2010s-national-total.html).

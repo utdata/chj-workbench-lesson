@@ -16,7 +16,7 @@ There are several columns that could use cleaning.
 
 - Convert the date fields to real dates.
 - You might make a copy of RACE and use **Refine** to merge into more narrow categories: White, Black, Asian, American Indian, Other.
-- You could rename Gender if you wanted to.
+- You could rename the values in Gender if you wanted to.
 
 ## Group and aggregate
 
@@ -39,3 +39,5 @@ There are tons of categorical data here for each case that you could group on. S
 - By RESCITY, RESCOUNTY or ZIP
 
 And basically every other category in the data.
+
+You might also try grouping by more than one column, like race and the year.

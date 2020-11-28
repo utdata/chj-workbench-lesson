@@ -2,7 +2,7 @@
 
 ## What you will learn
 
-This is a detailed Workbench walk through of Billboard Hot 100 data that explains the steps and concepts along the way. It's a fun dataset.
+This is a detailed Workbench walk through of Billboard Hot 100 data that explains the steps and concepts along the way. It's a fun dataset. You may not get through the whole lesson in this short class, but you can finish it up on your own.
 
 You may want to review the [Basic Data Journalism Functions](https://vimeo.com/showcase/7320305) as you go along.
 
@@ -48,7 +48,7 @@ It will take several seconds to load as it is nearly 320,500 rows of data.
 
 <img src="img/import.png" width="300">
 
-OK, that process was cooler than it looked. This data is stored in Github, a popular code-sharing platform for developers. Most data journalists use Github to share their work, which means you can stand upon the shoulders of giants. If you find a CSV file on Github, you can add `?raw=true` to the end of the URL to import the data into Workbench (and other data science tools).
+OK, that process was cooler than it looked. This data is stored in Github, a popular code-sharing platform for developers. Many data journalists use Github to share their work, which means you can stand upon the shoulders of giants. If you find a CSV file on Github, you can add `?raw=true` to the end of the URL to import the data into Workbench (and other data science tools).
 
 - Name your tab **Import**. (I recommend you keep your tab names short. You can end up with a lot of them.)
 
@@ -77,6 +77,8 @@ In our case the `WeekID` is not listed as a date and we'll need to fix that. The
   - You can always add a new step with the **+ ADD STEP** button below the last step. In this case you would then choose the **Convert to date & time** function and the select the column `WeekID` to convert. Play with the **Input format** to get the date style that works for you. "AUTO" is probably fine in this instance.
   - Another way to do the same this is to roll your cursor over the `WeekID` column header until you see the dropdown menu for that column, then choose **Convert to date & time** from the list. That will add the same kind of step as the first method.
 
+The gif below shows the second option.
+
 ![convert date](img/convert-date.gif)
 
 ## Top 10 Performers
@@ -97,25 +99,25 @@ To get this answer we need a simple aggregation. Since each row of data is an ap
 Most data science languages separate [Group and Aggregate](https://vimeo.com/showcase/7320305/video/435910349) into separate terms because you define values in each part separately. Workbench does the same, but they are in the same "Step" in the graphical interface. The function is called **Group** and the aggregation is called the **Operation** within the step.
 
 - Start a new step and choose the **Group** function.
-- For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.) See [Select](https://vimeo.com/showcase/7320305/video/435910324) for a refresher on the concept.
+- For **Select column** type in `Performer`. (Note the type-assist. Once you've typed enough of a column name to select it, you can hit **Return** on your keyboard to select that field.)
   - (A little explanation: When we Group by Performer, we are organizing the data to put all the rows with the same Performer together before we perform some kind of math on them: Counting, Summing or whatever. So we are organizing the data to have all the ABBA rows together, then all the rows for B.B. King, etc.)
-- For **Operations** keep the _Count_ selection, but go ahead and click on that menu to see the other possibilities. (This is the **Aggregation** step. Workbench combines aggregations with Group because you typically aggregate after grouping.)
+- For **Operations** keep the _Count_ selection, but go ahead and click on that menu to see the other possibilities. (This is the *Aggregation* step. Workbench combines aggregations with Group because you typically aggregate after grouping.)
 - Name the new column "Appearances" because that is what we are doing: Counting the number of appearances this performer has had on the Hot 100.
 - **Add a note** to the step that explains what you are doing. If you roll your cursor over the step title you'll get icons, including the note button outlined below. Use notes like this to explain to your future self or readers what you are doing in the step. (Go ahead and add notes to your previous steps, too.)
 
 ![Group and count](img/group-count.png)
 
-We could add more aggregations here by clicking on the **+ ADD** icon at the bottom of the Operations sub-step. In doing so, we could add new columns to our table with using different methods in the Operations dropdown. This table is much like a Pivot Table in Excel or Sheets. You'll likely need to use multiple aggregations in later assignments.
+We could add more aggregations here by clicking on the **+ ADD** icon at the bottom of the Operations sub-step. In doing so, we could add new columns to our table with using different methods in the Operations dropdown. This table is much like a Pivot Table in Excel or Sheets.
 
 ### Sorting data
 
 Now we have a list of performers and how many times they've been on the chart, but we want to know who has been there the most. For this we need to [Sort](https://vimeo.com/showcase/7320305/video/435910315) the data. (This simple operation comes in many different names in data science languages: "Arrange" in R, "Order by" in Python and SQL.)
 
 - Add a new step and choose the **Sort** function.
-- Add the column we need, `Appearances`, in the **By** menu.
+- In the **By** menu add the column we need: `Appearances`.
 - Click on the **Descending** button. (Journalists usually want the _most_ of everything.)
 - For the **Keep top** item, type in `10`. (We are going to keep only the top 10 records of our list so we can make a chart later.)
-- Don't forget to add your note to the step! (I want you to do this for each step, but I'm not going to remind you anymore.)
+- Don't forget to add your note to the step! (It's a good practice to have.)
 
 <img src="img/sort-list.png" width="300">
 
@@ -167,7 +169,7 @@ And, by having the choice to Keep or Delete rows, you can either find things you
 
 ### Deduplicating data
 
-Right now we have all information about songs that are No. 1 for each week since Aug. 1958. Before we can count the number of times a Performer has had a No. 1 song, we need to adjust our data to show each No. 1 Song/Performer combination only once. (Right now it is listed for each week the song is at No. 1.)
+Right now we have all information about songs that are No. 1 for each week since Aug. 1958. Before we can count the number of times a Performer has had a No. 1 song, we need to adjust our data to show each No. 1 Song/Performer combination only once. (Right now it shows a row for each week the song is at No. 1.)
 
 There are a couple of ways to achieve this and both take multiple steps. The method we will use is a little easier to follow, IMHO.
 
