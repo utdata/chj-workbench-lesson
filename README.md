@@ -18,4 +18,4 @@ Lastly, Workbench has a [Training](https://app.workbenchdata.com/lessons/en) sec
 
 - [The Demo](demo.md)
 - [Hands-on session](hands-on.md)
-- [Practice on your own](practice.md). If you want to practice on your own with some health-related data: Opioid deaths from Minnesota. (H/T Mary Jo).
+- [Practice on your own](practice.md). If you want to practice on your own with some health-related data: Opioid deaths from Minnesota. (H/T MaryJo).
