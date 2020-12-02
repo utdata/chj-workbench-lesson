@@ -1,8 +1,8 @@
 # Workbench Demo
 
-During the Center for Heath Journalism Data Fellowship week I did a demonstration of some of the features within [Workbench](https://workbenchdata.com/).
+During the Center for Heath Journalism Data Fellowship week I will do a demonstration of some of the features within [Workbench](https://workbenchdata.com/).
 
-We are using the SSN baby names dataset because it is simple yet allows us to explore various Workbench concepts, including reconfiguring data to create a chart in [Datawrapper](https://www.datawrapper.de/).
+We are using the SSN baby names dataset because it is simple yet allows us to explore various Workbench concepts, including reshaping data to create a chart in [Datawrapper](https://www.datawrapper.de/).
 
 ## Finished demonstration workflow
 
