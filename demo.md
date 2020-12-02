@@ -37,6 +37,8 @@ Don't try to follow along on the demo. Just watch.
 
 The tab PopularityAllYears shows this operation.
 
+[This video explains group and aggregate](https://vimeo.com/showcase/7320305/video/435910349).
+
 - Use **Start with tab** from the `Combined` tab.
 - Use **Group** and included **Operations** to find the *Total* and *Average Count* of names over five years.
 - Use **Sort** to arrange by most common names in 2019.
